@@ -54,22 +54,15 @@ public class category extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         rSLabelImage1 = new rojerusan.RSLabelImage();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        rSLabelImage3 = new rojerusan.RSLabelImage();
-        rSLabelImage4 = new rojerusan.RSLabelImage();
-        rSLabelImage5 = new rojerusan.RSLabelImage();
-        rSLabelImage6 = new rojerusan.RSLabelImage();
-        rSLabelImage2 = new rojerusan.RSLabelImage();
-        rSLabelImage8 = new rojerusan.RSLabelImage();
-        rSLabelImage7 = new rojerusan.RSLabelImage();
+        rSButton2 = new rojeru_san.RSButton();
+        rSButton3 = new rojeru_san.RSButton();
+        rSButton4 = new rojeru_san.RSButton();
+        rSButton5 = new rojeru_san.RSButton();
+        rSButton6 = new rojeru_san.RSButton();
+        rSButton7 = new rojeru_san.RSButton();
+        rSButton1 = new rojeru_san.RSButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -82,6 +75,7 @@ public class category extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jPanel2 = new javax.swing.JPanel();
 
         jLabel2.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -136,26 +130,6 @@ public class category extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(204, 0, 0));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel20.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("Exit");
-        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel20MouseClicked(evt);
-            }
-        });
-        jPanel4.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 60, -1));
-
-        jLabel21.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("Logout");
-        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel21MouseClicked(evt);
-            }
-        });
-        jPanel4.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 100, -1));
-
         jLabel1.setFont(new java.awt.Font("Viner Hand ITC", 1, 36)); // NOI18N
         jLabel1.setText("Super Market");
         jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, -1, -1));
@@ -163,118 +137,110 @@ public class category extends javax.swing.JFrame {
         rSLabelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/abstract (3).png"))); // NOI18N
         jPanel4.add(rSLabelImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 50, 50));
 
-        jLabel19.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("Cashier");
-        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel19MouseClicked(evt);
+        rSButton2.setBackground(new java.awt.Color(255, 102, 0));
+        rSButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/icons/list.png"))); // NOI18N
+        rSButton2.setText("Category");
+        rSButton2.setColorHover(new java.awt.Color(255, 255, 0));
+        rSButton2.setColorTextHover(new java.awt.Color(0, 0, 0));
+        rSButton2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        rSButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        rSButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButton2ActionPerformed(evt);
             }
         });
-        jPanel4.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, -1, -1));
+        jPanel4.add(rSButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 320, -1));
 
-        jLabel17.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("Pos");
-        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel17MouseClicked(evt);
+        rSButton3.setBackground(new java.awt.Color(255, 102, 0));
+        rSButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/icons/brand.png"))); // NOI18N
+        rSButton3.setText("Brand");
+        rSButton3.setColorHover(new java.awt.Color(255, 255, 0));
+        rSButton3.setColorTextHover(new java.awt.Color(0, 0, 0));
+        rSButton3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        rSButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        rSButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButton3ActionPerformed(evt);
             }
         });
-        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, -1, -1));
+        jPanel4.add(rSButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 320, -1));
 
-        jLabel11.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Product");
-        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel11MouseClicked(evt);
+        rSButton4.setBackground(new java.awt.Color(255, 102, 0));
+        rSButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/icons/order (1).png"))); // NOI18N
+        rSButton4.setText("Product");
+        rSButton4.setColorHover(new java.awt.Color(255, 255, 0));
+        rSButton4.setColorTextHover(new java.awt.Color(0, 0, 0));
+        rSButton4.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        rSButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        rSButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButton4ActionPerformed(evt);
             }
         });
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, -1, -1));
+        jPanel4.add(rSButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 320, -1));
 
-        jLabel10.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Brand");
-        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel10MouseClicked(evt);
+        rSButton5.setBackground(new java.awt.Color(255, 102, 0));
+        rSButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/icons/pos-terminal.png"))); // NOI18N
+        rSButton5.setText("POS");
+        rSButton5.setColorHover(new java.awt.Color(255, 255, 0));
+        rSButton5.setColorTextHover(new java.awt.Color(0, 0, 0));
+        rSButton5.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        rSButton5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        rSButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButton5ActionPerformed(evt);
             }
         });
-        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, -1));
+        jPanel4.add(rSButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 320, -1));
 
-        jLabel8.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Category");
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
+        rSButton6.setBackground(new java.awt.Color(255, 102, 0));
+        rSButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/icons/cash-register.png"))); // NOI18N
+        rSButton6.setText("Cashier");
+        rSButton6.setColorHover(new java.awt.Color(255, 255, 0));
+        rSButton6.setColorTextHover(new java.awt.Color(0, 0, 0));
+        rSButton6.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        rSButton6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        rSButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButton6ActionPerformed(evt);
             }
         });
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
+        jPanel4.add(rSButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 320, -1));
 
-        rSLabelImage3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/list.png"))); // NOI18N
-        rSLabelImage3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rSLabelImage3MouseClicked(evt);
+        rSButton7.setBackground(new java.awt.Color(255, 102, 0));
+        rSButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/icons/logout.png"))); // NOI18N
+        rSButton7.setText("Logout");
+        rSButton7.setColorHover(new java.awt.Color(255, 255, 0));
+        rSButton7.setColorTextHover(new java.awt.Color(0, 0, 0));
+        rSButton7.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        rSButton7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        rSButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButton7ActionPerformed(evt);
             }
         });
-        jPanel4.add(rSLabelImage3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 20, 30));
+        jPanel4.add(rSButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 320, -1));
 
-        rSLabelImage4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/brand.png"))); // NOI18N
-        rSLabelImage4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rSLabelImage4MouseClicked(evt);
+        rSButton1.setBackground(new java.awt.Color(255, 102, 0));
+        rSButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/icons/exit.png"))); // NOI18N
+        rSButton1.setText("Exit");
+        rSButton1.setColorHover(new java.awt.Color(255, 255, 0));
+        rSButton1.setColorTextHover(new java.awt.Color(0, 0, 0));
+        rSButton1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        rSButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        rSButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButton1ActionPerformed(evt);
             }
         });
-        jPanel4.add(rSLabelImage4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 20, 30));
-
-        rSLabelImage5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/order.png"))); // NOI18N
-        rSLabelImage5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rSLabelImage5MouseClicked(evt);
-            }
-        });
-        jPanel4.add(rSLabelImage5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 20, 30));
-
-        rSLabelImage6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/pos-terminal.png"))); // NOI18N
-        rSLabelImage6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rSLabelImage6MouseClicked(evt);
-            }
-        });
-        jPanel4.add(rSLabelImage6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 20, 20));
-
-        rSLabelImage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/exit.png"))); // NOI18N
-        rSLabelImage2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rSLabelImage2MouseClicked(evt);
-            }
-        });
-        jPanel4.add(rSLabelImage2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 400, 20, 30));
-
-        rSLabelImage8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/logout.png"))); // NOI18N
-        rSLabelImage8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rSLabelImage8MouseClicked(evt);
-            }
-        });
-        jPanel4.add(rSLabelImage8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, 20, 20));
-
-        rSLabelImage7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pos/images/money.png"))); // NOI18N
-        rSLabelImage7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rSLabelImage7MouseClicked(evt);
-            }
-        });
-        jPanel4.add(rSLabelImage7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 20, 20));
+        jPanel4.add(rSButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 320, -1));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 500));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -285,42 +251,48 @@ public class category extends javax.swing.JFrame {
         jLabel7.setText("Status");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 84, 60, 20));
 
+        jButton1.setBackground(new java.awt.Color(255, 102, 0));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Add");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 130, -1));
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 220, 40));
         jPanel3.add(txtcat, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 39, 124, -1));
 
         txtstatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Active", "Deactive" }));
         jPanel3.add(txtstatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 84, 124, -1));
 
+        jButton2.setBackground(new java.awt.Color(255, 102, 0));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Delete");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 130, -1));
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 220, 40));
 
+        jButton3.setBackground(new java.awt.Color(255, 102, 0));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Update");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 130, -1));
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 220, 40));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 290, 260));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel5.setText("Category");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
 
         jTable1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -339,6 +311,9 @@ public class category extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 409, 267));
+
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 500));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 0, 770, 500));
 
@@ -567,112 +542,59 @@ public class category extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel16MouseClicked
 
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    private void rSButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton2ActionPerformed
         // TODO add your handling code here:
         brand b = new brand();
         b.setVisible(true);
         this.hide();
-    }//GEN-LAST:event_jLabel8MouseClicked
+    }//GEN-LAST:event_rSButton2ActionPerformed
 
-    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+    private void rSButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton3ActionPerformed
         // TODO add your handling code here:
         brand b = new brand();
         b.setVisible(true);
         this.hide();
-    }//GEN-LAST:event_jLabel10MouseClicked
+    }//GEN-LAST:event_rSButton3ActionPerformed
 
-    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+    private void rSButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton4ActionPerformed
         // TODO add your handling code here:
         product p = new product();
         p.setVisible(true);
         this.hide();
-    }//GEN-LAST:event_jLabel11MouseClicked
+    }//GEN-LAST:event_rSButton4ActionPerformed
 
-    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+    private void rSButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton5ActionPerformed
         // TODO add your handling code here:
-        
-       login p = new login();
+        login p = new login();
         p.setVisible(true);
         this.hide();
-        
-        
-        
-    }//GEN-LAST:event_jLabel17MouseClicked
+    }//GEN-LAST:event_rSButton5ActionPerformed
 
-    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+    private void rSButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton6ActionPerformed
         // TODO add your handling code here:
-
         cashier p = new cashier();
         p.setVisible(true);
         this.hide();
-    }//GEN-LAST:event_jLabel19MouseClicked
-
-    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
-        // TODO add your handling code here:
-
-        System.exit(0);
-    }//GEN-LAST:event_jLabel20MouseClicked
+    }//GEN-LAST:event_rSButton6ActionPerformed
 private JFrame frame1;
-    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
+    private void rSButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton7ActionPerformed
         // TODO add your handling code here:
         frame1 = new JFrame("Logout");
-        if (JOptionPane.showConfirmDialog(frame1,"Confirm if you want to Logout","MainMenu",
+        if (JOptionPane.showConfirmDialog(frame1,"Confirm if you want to Logout","Home",
             JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION){
-        this.dispose();
+        this.dispose();//to close the current jframe
         new login().setVisible(true);
         };
-
-    }//GEN-LAST:event_jLabel21MouseClicked
-
-    private void rSLabelImage3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSLabelImage3MouseClicked
+    }//GEN-LAST:event_rSButton7ActionPerformed
+private JFrame frame;
+    private void rSButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton1ActionPerformed
         // TODO add your handling code here:
-        category b = new category();
-        b.setVisible(true);
-        this.hide();
-    }//GEN-LAST:event_rSLabelImage3MouseClicked
-
-    private void rSLabelImage4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSLabelImage4MouseClicked
-        // TODO add your handling code here:
-        brand b = new brand();
-        b.setVisible(true);
-        this.hide();
-    }//GEN-LAST:event_rSLabelImage4MouseClicked
-
-    private void rSLabelImage5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSLabelImage5MouseClicked
-        // TODO add your handling code here:
-        product p = new product();
-        p.setVisible(true);
-        this.hide();;
-    }//GEN-LAST:event_rSLabelImage5MouseClicked
-
-    private void rSLabelImage6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSLabelImage6MouseClicked
-        // TODO add your handling code here:
-        pos p = new pos();
-        p.setVisible(true);
-        this.hide();
-    }//GEN-LAST:event_rSLabelImage6MouseClicked
-
-    private void rSLabelImage2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSLabelImage2MouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_rSLabelImage2MouseClicked
-
-    private void rSLabelImage8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSLabelImage8MouseClicked
-        // TODO add your handling code here:
-        frame1 = new JFrame("Logout");
-        if (JOptionPane.showConfirmDialog(frame1,"Confirm if you want to Logout","MainMenu",
+        frame = new JFrame("Exit");
+        if (JOptionPane.showConfirmDialog(frame,"Confirm if you want to Exit","login",
             JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION){
         this.dispose();
-        new login().setVisible(true);
-        };
-    }//GEN-LAST:event_rSLabelImage8MouseClicked
-
-    private void rSLabelImage7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSLabelImage7MouseClicked
-        // TODO add your handling code here:
-        cashier p = new cashier();
-        p.setVisible(true);
-        this.hide();
-    }//GEN-LAST:event_rSLabelImage7MouseClicked
+        }
+    }//GEN-LAST:event_rSButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -714,34 +636,28 @@ private JFrame frame1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private rojeru_san.RSButton rSButton1;
+    private rojeru_san.RSButton rSButton2;
+    private rojeru_san.RSButton rSButton3;
+    private rojeru_san.RSButton rSButton4;
+    private rojeru_san.RSButton rSButton5;
+    private rojeru_san.RSButton rSButton6;
+    private rojeru_san.RSButton rSButton7;
     private rojerusan.RSLabelImage rSLabelImage1;
-    private rojerusan.RSLabelImage rSLabelImage2;
-    private rojerusan.RSLabelImage rSLabelImage3;
-    private rojerusan.RSLabelImage rSLabelImage4;
-    private rojerusan.RSLabelImage rSLabelImage5;
-    private rojerusan.RSLabelImage rSLabelImage6;
-    private rojerusan.RSLabelImage rSLabelImage7;
-    private rojerusan.RSLabelImage rSLabelImage8;
     private javax.swing.JTextField txtcat;
     private javax.swing.JComboBox<String> txtstatus;
     // End of variables declaration//GEN-END:variables
